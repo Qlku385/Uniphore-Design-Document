@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "P001",
+    "resourceType": "database",
+    "environment": ["prod"],
+    "conditions": {
+      "backup_enabled": true
+    },
+    "description": "Production DBs must have backups enabled"
+  },
+  {
+    "policy_id": "P002",
+    "resourceType": "database",
+    "environment": ["prod"],
+    "conditions": {
+      "replicas": 2
+    },
+    "description": "Production DBs must have at least 2 replicas"
+  },
+  {
+    "policy_id": "P003",
+    "resourceType": "database",
+    "environment": ["prod"],
+    "conditions": {
+      "publicly_accessible": false
+    },
+    "description": "Production DBs must not be publicly accessible"
+  },
+  {
+    "policy_id": "P004",
+    "resourceType": "database",
+    "environment": ["prod"],
+    "conditions": {
+      "encryption": true
+    },
+    "description": "Databases must use encryption at rest"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "service_id": "db1",
+    "resourceType": "database",
+    "environment": "prod",
+    "backup_enabled": false,
+    "encryption": true,
+    "replicas": 1,
+    "publicly_accessible": false
+  },
+  {
+    "service_id": "db2",
+    "resourceType": "database",
+    "environment": "prod",
+    "backup_enabled": true,
+    "encryption": true,
+    "replicas": 2,
+    "publicly_accessible": false
+  },
+  {
+    "service_id": "db3",
+    "resourceType": "database",
+    "environment": "prod",
+    "backup_enabled": true,
+    "encryption": false,
+    "replicas": 2,
+    "publicly_accessible": true
+  },
+  {
+    "service_id": "db4",
+    "resourceType": "database",
+    "environment": "prod",
+    "backup_enabled": true,
+    "encryption": true,
+    "replicas": 3,
+    "publicly_accessible": false
+  }
+]
